@@ -2,7 +2,7 @@
 
 Welcome to my **personal portfolio** repository! This is a clean, responsive, and modern portfolio website built with **HTML**, **CSS**, and **JavaScript** to showcase my skills, projects, and professional identity.
 
-🌐 **Live Site:** [Click here to view](https://my-portfolio-g1uw.onrender.com)  
+🌐 **Live Site:** [Click here to view](https://portfolio-yk7h.onrender.com)  
 > Replace the above URL with your actual live deployment link.
 
 ---
@@ -41,8 +41,8 @@ To run this project locally:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/albenusmurmu/my-portfolio.git
-   cd my-portfolio
+   git clone https://github.com/albenusmurmu/portfolio.git
+   cd portfolio
    
 2. **Open index.html in your browser**
  ```
