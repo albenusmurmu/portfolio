@@ -1,6 +1,15 @@
 const Contact = require("../models/Contact");
 const nodemailer = require("nodemailer");
 
+// create transporter once (outside function)
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
+});
+
 exports.sendMessage = async (req, res) => {
 
   try {
@@ -16,15 +25,14 @@ exports.sendMessage = async (req, res) => {
 
     await newMessage.save();
 
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-      }
+    // send response immediately
+    res.status(200).json({
+      success: true,
+      message: "Message sent successfully 🚀"
     });
 
-    await transporter.sendMail({
+    // send email in background
+    transporter.sendMail({
       from: email,
       to: process.env.EMAIL_USER,
       subject: "New Portfolio Message",
@@ -34,13 +42,20 @@ exports.sendMessage = async (req, res) => {
       Subject: ${subject}
       Message: ${message}
       `
+    }).then(() => {
+      console.log("Email sent");
+    }).catch(err => {
+      console.log("Email error:", err);
     });
-
-    res.status(200).json({ success: true });
 
   } catch (error) {
 
-    res.status(500).json({ error: "Server error" });
+    console.log(error);
+
+    res.status(500).json({
+      success: false,
+      message: "Server error"
+    });
 
   }
 };

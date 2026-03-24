@@ -350,7 +350,6 @@ async function handleSend(button) {
   const subject = document.getElementById("subject").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  // Required field validation
   if (!name) {
     alert("Name is required");
     return;
@@ -367,37 +366,45 @@ async function handleSend(button) {
   }
 
   button.disabled = true;
-  button.innerText = "Sending...";
+  button.innerText = "Sending... Please wait";
 
   try {
 
-    const response = await fetch("https://portfolio-backend-lp4t.onrender.com/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message
-      })
-    });
+    const response = await fetch(
+      "https://portfolio-backend-lp4t.onrender.com/api/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject,
+          message
+        })
+      }
+    );
 
-    const data = await response.json();
+    if (response.ok) {
 
-    alert(data.message || "Message sent successfully!");
+      alert("Message sent successfully 🚀");
 
-    // Reset form
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("message").value = "";
+
+    } else {
+
+      alert("Failed to send message");
+
+    }
 
   } catch (error) {
 
     console.error(error);
-    alert("Something went wrong. Please try again later.");
+    alert("Server is busy. Try again.");
 
   }
 
