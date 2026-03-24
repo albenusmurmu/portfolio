@@ -12,7 +12,9 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: "*", // Allow all origins (for development). In production, specify allowed origins.
+}));
 app.use(express.json());
 
 // Rate limiter for contact API
