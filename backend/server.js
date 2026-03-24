@@ -24,6 +24,10 @@ app.use("/api/contact", require("./routes/contactRoutes"));
 // Port
 const PORT = process.env.PORT || 5000;
 
+app.get('/', (req, res) => {
+  res.send('Backend is running 🚀');
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
