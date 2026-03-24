@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <title> Albenus Peter — Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/images/graphic-designer_8803746.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo"><img src="assets/images/graphic-designer_8803746.png" alt="graphic-designer_8803746.png" style="width: 20px;height: 20px;"></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home"           onclick="closeMenu()"><span class="menu-num">01.</span>Home</a>
+  <a href="#about"          onclick="closeMenu()"><span class="menu-num">02.</span>About</a>
+  <a href="#skills"         onclick="closeMenu()"><span class="menu-num">03.</span>Skills</a>
+  <a href="#projects"       onclick="closeMenu()"><span class="menu-num">04.</span>Projects</a>
+  <a href="#certifications" onclick="closeMenu()"><span class="menu-num">05.</span>Certs</a>
+  <a href="#contact"        onclick="closeMenu()"><span class="menu-num">06.</span>Contact</a>
+</div>
+
+<!-- STATUS BADGE -->
+<div class="glitch-badge">
+  <div class="status-line"><div class="dot"></div>AVAILABLE FOR WORK</div>
+  <div style="color:var(--muted);font-size:0.58rem;">→ Open to opportunities</div>
+</div>
+
+<!-- HERO -->
+<header id="home">
+  <div class="hero-inner">
+    <div class="terminal-tag">
+      <div class="dot"></div>
+      <span>~/portfolio $</span>&nbsp;<span style="color:var(--text)">whoami</span>
+    </div>
+    <div class="hello"><span>//</span> Hello, I'm</div>
+    <h1 class="name">
+      <span class="first">Albenus&nbsp;</span><span class="last" data-text="Peter">Peter</span>
+    </h1>
+    <div class="role-wrap">
+      <div class="role-inner" id="roleInner"></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact"  class="btn btn-outline">Contact Me</a>
+    </div>
+    <div class="tech-pills" id="techPills"></div>
+  </div>
+</header>
+
+<!-- TECH ORBIT -->
+<div class="orbit-area" id="orbitArea">
+  <div class="orbit-ring orbit-ring-1"></div>
+  <div class="orbit-ring orbit-ring-2"></div>
+  <div class="orbit-ring orbit-ring-3"></div>
+  <div class="orbit-center">DEV</div>
+</div>
+
+<!-- SIDE BARS -->
+<div class="side-bar">
+  <a class="social-link" href="https://github.com/albenusmurmu">GitHub</a>
+  <a class="social-link" href="https://www.linkedin.com/in/albenus-murmu-339ba128a/">LinkedIn</a>
+  <a class="social-link" href="https://x.com/AlbenusMur63460`">Twitter</a>
+  <div class="line"></div>
+</div>
+<div class="side-email">
+  <a href="mailto:albenusm@gmail.com">albenusm@gmail.com</a>
+  <div class="line"></div>
+</div>
+
+<!-- SCROLL HINT -->
+<div class="scroll-hint">
+  <div class="scroll-arrow"></div>SCROLL
+</div>
+
+<!-- =========================== 😺 About Section 😺 =========================== -->
+
+<section id="about">
+  <div class="about-container">
+
+    <!-- Section Header -->
+    <div class="section-header">
+      <div class="section-eyebrow">
+        <span class="num">02.</span> Who Am I
+      </div>
+      <h2 class="section-title">About <span class="accent">Me</span></h2>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="about-grid">
+
+      <!-- LEFT: Image -->
+      <div class="about-left">
+        <div class="img-frame">
+          <div class="corner-tr"></div>
+          <div class="corner-bl"></div>
+          <div class="img-wrapper">
+            <img src="assets/images/profile-pic.jpg" alt="Albenus Peter"/>
+            <div class="img-badge">
+              <div class="dot"></div>
+              Available for Hire
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-num">1+</span>
+            <span class="stat-label">Yrs Exp</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">15+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Tech Stack</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Bio -->
+      <div class="about-right">
+
+        <!-- Terminal header chrome -->
+        <div class="terminal-header">
+          <div class="dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="file-name">albenus_peter.config</span>
+          &nbsp;—&nbsp; about.md
+        </div>
+
+        <div class="terminal-body">
+
+          <div class="intro-line">PROFILE / Albenus Peter</div>
+
+          <div class="bio-block">
+            <span class="comment">// Who I am</span>
+            <p>
+              Hello! I'm <span class="hl">Albenus Peter</span>, a passionate
+              <span class="hl">DevOps Engineer</span> with a strong background in
+              <span class="hl-rose">Software Development.</span> with over
+              <span class="hl">1 year</span> of hands-on experience building
+              systems that scale, automate, and deliver.
+            </p>
+          </div>
+
+          <div class="bio-block">
+            <span class="comment">// What I do</span>
+            <p>
+              My primary focus is on <span class="hl">DevOps</span> , cloud infrastructure, &amp; automation. 
+              (<span class="hl">AWS</span>), container orchestration with
+              <span class="hl">Docker &amp; Kubernetes</span>, and automating
+              pipelines through <span class="hl-rose">CI/CD</span>
+              practices. I live on the terminal
+              and breathe <span class="hl">Linux</span>.
+            </p>
+          </div>
+
+          <div class="bio-block">
+            <span class="comment">// Beyond the screen</span>
+            <p>
+              When I'm not shipping code, you'll find me hiking, reading, or
+              experimenting with new recipes — the same curiosity that drives
+              me to explore new frameworks.
+            </p>
+          </div>
+
+          <div class="tags-row">
+            <span class="tag">Linux</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">Bash</span>
+            <span class="tag">Git</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">React</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="cv-row">
+            <a href="assets/images/MyResume/Resume_Albenus_murmu.pdf"
+               target="_blank" rel="noopener" class="btn-cv btn-cv-primary">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+              Open CV
+            </a>
+            <a href="assets/images/MyResume/Resume_Albenus_murmu.pdf"
+               download class="btn-cv btn-cv-outline">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Download CV
+            </a>
+          </div>
+
+        </div><!-- /terminal-body -->
+      </div><!-- /about-right -->
+    </div><!-- /about-grid -->
+  </div><!-- /container -->
+</section>
+
+<!-- =========================  👻 End About Section 👻 ========================== -->
+
+
+<!-- // =============================== 😺 Skill Bars 😺 =============================== \\ -->
+
+<section id="skills">
+  <div class="skills-container-wrap">
+
+    <!-- Header -->
+    <div class="section-header">
+      <div class="section-eyebrow">
+        <span class="num">03.</span> What I Work With
+      </div>
+      <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      <p class="section-subtitle">// stack.config — tools &amp; technologies I ship with daily</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="skills-grid" id="skillsGrid">
+
+      <!-- 1 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">💻</div>
+            <span class="card-num">01</span>
+          </div>
+          <h3 class="card-title">Front-end Development</h3>
+          <p class="card-desc">Crafting responsive, performant UIs with modern frameworks, pixel-perfect layouts, and smooth interactions.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:85%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">React</span>
+            <span class="card-tag">Vue.js</span>
+            <span class="card-tag">CSS</span>
+            <span class="card-tag">HTML5</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">⚙️</div>
+            <span class="card-num">02</span>
+          </div>
+          <h3 class="card-title">Back-end Development</h3>
+          <p class="card-desc">Building robust server-side APIs and microservices with Node.js, Express, Python, and Django.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:80%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Node.js</span>
+            <span class="card-tag">Python</span>
+            <span class="card-tag">Django</span>
+            <span class="card-tag">REST</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">🎨</div>
+            <span class="card-num">03</span>
+          </div>
+          <h3 class="card-title">UI / UX Design</h3>
+          <p class="card-desc">Designing intuitive, user-centered experiences with high-fidelity prototypes and design systems.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:75%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Figma</span>
+            <span class="card-tag">Adobe XD</span>
+            <span class="card-tag">Wireframe</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">☁️</div>
+            <span class="card-num">04</span>
+          </div>
+          <h3 class="card-title">Cloud Computing</h3>
+          <p class="card-desc">Deploying, managing and securing scalable cloud infrastructure across AWS services and serverless architectures.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:82%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">AWS</span>
+            <span class="card-tag">EC2</span>
+            <span class="card-tag">S3</span>
+            <span class="card-tag">Lambda</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">🗄️</div>
+            <span class="card-num">05</span>
+          </div>
+          <h3 class="card-title">Database Design</h3>
+          <p class="card-desc">Architecting and optimizing relational and NoSQL databases for high-throughput, low-latency workloads.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:78%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">MongoDB</span>
+            <span class="card-tag">MySQL</span>
+            <span class="card-tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="skill-card">
+        <div class="card-bar"></div>
+        <div class="card-glow"></div>
+        <div class="card-inner">
+          <div class="card-icon-row">
+            <div class="card-icon">🔐</div>
+            <span class="card-num">06</span>
+          </div>
+          <h3 class="card-title">DevOps</h3>
+          <p class="card-desc">Automating delivery pipelines, containerizing workloads, and managing infrastructure as code at scale.</p>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar-label">
+              <span class="skill-bar-name">Proficiency</span>
+              <span class="skill-bar-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="--bar-w:88%"></div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="card-tag">Docker</span>
+            <span class="card-tag">CI/CD</span>
+            <span class="card-tag">Linux</span>
+            <span class="card-tag">Terraform</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /skills-grid -->
+
+    <!-- Marquee -->
+    <div class="marquee-wrap">
+      <div class="marquee-track" id="marqueeTrack"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- // =============================== 👻 End Skill Bars 👻  =============================== \\ -->
+
+<!-- // =============================== 😺  Project Bars 😺  =============================== \\ -->
+
+<section id="projects">
+  <div class="projects-wrap">
+
+    <!-- Header -->
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="num">04.</span> What I've Built</div>
+      <h2 class="section-title">My <span class="accent">Projects</span></h2>
+      <p class="section-subtitle">// projects.log — shipped code, real deployments</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="frontend">Front-end</button>
+      <button class="filter-btn" data-filter="tools">Tools</button>
+    </div>
+
+    <!-- Featured project -->
+    <div class="featured-project" id="featuredCard" data-cats="fullstack">
+      <div class="feat-img-wrap">
+        <img src="assets/images/SonyCom.png" alt="SonyCom"/>
+      </div>
+      <div class="feat-info">
+        <div class="feat-label">Featured Project</div>
+        <h3 class="feat-title">SonyCom</h3>
+        <p class="feat-desc">A modern full-stack application with a responsive, component-driven UI and powerful backend systems. Built with the MERN stack and deployed on Render.</p>
+        <div class="feat-tags">
+          <span class="tag-pill">React.js</span>
+          <span class="tag-pill">Node.js</span>
+          <span class="tag-pill">MongoDB</span>
+          <span class="tag-pill">Express.js</span>
+        </div>
+        <div class="feat-links">
+          <a href="https://sonycom-frontend.onrender.com/" target="_blank" rel="noopener" class="feat-link feat-link-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Live Demo
+          </a>
+          <a href="https://github.com/albenusmurmu/sonycom-frontend" target="_blank" rel="noopener" class="feat-link feat-link-ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            Source
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards grid -->
+    <div class="projects-grid" id="projectsGrid">
+
+      <!-- 1 -->
+      <div class="project-card" data-cats="fullstack">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#a855f7,#00d4ff)"></div>
+          <div class="card-num-badge">02</div>
+          <img src="assets/images/Mini Social Chat.png" alt="Mini Social Chat"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">A dynamic real-time chat app powered by REST APIs with seamless messaging and social interaction.</p>
+              <a href="https://rest-api-n9d5.onrender.com/posts" target="_blank" rel="noopener" class="overlay-btn">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Mini Social Chat</h3>
+          <div class="card-tags">
+            <span class="card-tag">MongoDB</span><span class="card-tag">Express.js</span>
+            <span class="card-tag">React.js</span><span class="card-tag">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="project-card" data-cats="tools frontend">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#00d4ff,#39ff14)"></div>
+          <div class="card-num-badge">03</div>
+          <img src="assets/images/Wheather.png" alt="Weather App"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">Real-time weather updates with fast API responses and beautiful data visualisations via D3.js.</p>
+              <a href="https://knowsweather.onrender.com/" target="_blank" rel="noopener" class="overlay-btn">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Knows-Current-Weather</h3>
+          <div class="card-tags">
+            <span class="card-tag">JavaScript</span><span class="card-tag">Weather API</span><span class="card-tag">D3.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="project-card" data-cats="frontend tools">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#ffb830,#ff2d78)"></div>
+          <div class="card-num-badge">04</div>
+          <img src="assets/images/random color.png" alt="Random Color Generator"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">Click a button to instantly generate a random color with its HEX code displayed live.</p>
+              <a href="https://generate-random-color.onrender.com/" target="_blank" rel="noopener" class="overlay-btn">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Random Color Generator</h3>
+          <div class="card-tags">
+            <span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="project-card" data-cats="frontend">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#39ff14,#00f5d4)"></div>
+          <div class="card-num-badge">05</div>
+          <img src="assets/images/Spotify-UI.png" alt="Spotify UI Clone"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">A pixel-perfect Spotify UI clone showcasing advanced responsive design with Bootstrap.</p>
+              <a href="https://spotify-ui-tddh.onrender.com/" target="_blank" rel="noopener" class="overlay-btn">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Spotify UI Clone</h3>
+          <div class="card-tags">
+            <span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="project-card" data-cats="frontend tools">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#ff2d78,#a855f7)"></div>
+          <div class="card-num-badge">06</div>
+          <img src="assets/images/Simon Says game.png" alt="Simon Says Game"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">A fun and interactive memory game built with pure HTML, CSS, and JavaScript — no libraries.</p>
+              <a href="https://simon-says-game-ce5v.onrender.com/" target="_blank" rel="noopener" class="overlay-btn">View Demo ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Simon Says Game</h3>
+          <div class="card-tags">
+            <span class="card-tag">HTML</span><span class="card-tag">CSS</span><span class="card-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="project-card" data-cats="fullstack tools">
+        <div class="card-img-wrap">
+          <div class="card-topbar" style="background:linear-gradient(90deg,#00f5d4,#ffb830)"></div>
+          <div class="card-num-badge">07</div>
+          <img src="assets/images/StockMonitoringTool.png" alt="Stock Monitoring Tool"/>
+          <div class="card-overlay">
+            <div class="overlay-inner">
+              <p class="overlay-desc">Real-time stock monitoring web app tracking and displaying live prices and market trends.</p>
+              <a href="https://github.com/albenusmurmu/Stock-Monitoring-Tool" target="_blank" rel="noopener" class="overlay-btn">View Code ↗</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3 class="card-title">Stock Monitoring Tools</h3>
+          <div class="card-tags">
+            <span class="card-tag">MongoDB</span><span class="card-tag">Express.js</span>
+            <span class="card-tag">React.js</span><span class="card-tag">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+
+    <!-- View all -->
+    <div class="view-all-wrap">
+      <a href="https://github.com/albenusmurmu" target="_blank" rel="noopener" class="btn-view-all">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        View All on GitHub
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- // =============================== 👻 End Project Bars 👻  =============================== \\ -->
+
+
+<!-- // ===============================   😺 Certifications Bars 😺  =============================== \\ -->
+
+<section id="certifications">
+  <div class="certs-wrap">
+
+    <!-- Header -->
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="num">05.</span> Credentials</div>
+      <h2 class="section-title">My <span class="accent">Certifications</span></h2>
+      <p class="section-subtitle">// credentials.verify — validated skills &amp; completed programs</p>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="cert-stats">
+      <div class="cert-stat">
+        <div class="cert-stat-icon">🏅</div>
+        <div>
+          <span class="cert-stat-val">9</span>
+          <span class="cert-stat-label">Certifications</span>
+        </div>
+      </div>
+      <div class="cert-stat">
+        <div class="cert-stat-icon">☁️</div>
+        <div>
+          <span class="cert-stat-val">2</span>
+          <span class="cert-stat-label">Cloud Certs</span>
+        </div>
+      </div>
+      <div class="cert-stat">
+        <div class="cert-stat-icon">☕</div>
+        <div>
+          <span class="cert-stat-val">4</span>
+          <span class="cert-stat-label">Java Certs</span>
+        </div>
+      </div>
+      <div class="cert-stat">
+        <div class="cert-stat-icon">⚡</div>
+        <div>
+          <span class="cert-stat-val">150h</span>
+          <span class="cert-stat-label">Training hrs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter -->
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cloud">Cloud</button>
+      <button class="filter-btn" data-filter="java">Java</button>
+      <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+      <button class="filter-btn" data-filter="leadership">Leadership</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="cert-grid" id="certGrid">
+
+      <!-- 1 -->
+      <div class="cert-card" data-cats="fullstack">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">MERN</div>
+          <img src="assets/images/Auratech_Certi.png" alt="FullStack Development"/>
+          <div class="cert-overlay">
+            <a href="https://github.com/albenusmurmu/Certifications/blob/main/Albenus_murmu_internship_certificate.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Full Stack Development</div>
+          <h3 class="cert-title">FullStack Development Certified</h3>
+          <p class="cert-desc">Scalable MERN apps with auth, CRUD operations &amp; responsive UI.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">React</span>
+            <span class="cert-tag">Node.js</span>
+            <span class="cert-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="cert-card" data-cats="cloud">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Oracle</div>
+          <img src="assets/images/OCI-Foundations.png" alt="Oracle Cloud Foundations"/>
+          <div class="cert-overlay">
+            <a href="https://github.com/albenusmurmu/Certifications/blob/main/eCertificate-OCI-Foundation.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Oracle University</div>
+          <h3 class="cert-title">Oracle Cloud Foundations Associate</h3>
+          <p class="cert-desc">Covers OCI services, security architecture, and cloud pricing models.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Cloud</span>
+            <span class="cert-tag">OCI</span>
+            <span class="cert-tag">Infrastructure</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="cert-card" data-cats="cloud">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Oracle</div>
+          <img src="assets/images/OCI-AI-Foundations.png" alt="Oracle AI Foundations"/>
+          <div class="cert-overlay">
+            <a href="https://github.com/albenusmurmu/Certifications/blob/main/eCertificate.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Oracle University</div>
+          <h3 class="cert-title">Oracle AI Foundations Associate</h3>
+          <p class="cert-desc">Machine learning concepts, AI applications, and OCI AI services.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">AI</span>
+            <span class="cert-tag">ML</span>
+            <span class="cert-tag">OCI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="cert-card" data-cats="leadership">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Aspire</div>
+          <img src="assets/images/Aspire-Certificate.jpg" alt="Aspire Certificate"/>
+          <div class="cert-overlay">
+            <a href="assets/images/Aspire-Certificate.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Aspire Institute</div>
+          <h3 class="cert-title">Aspire Leaders Program</h3>
+          <p class="cert-desc">40 hrs of global leadership: communication &amp; critical thinking.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Leadership</span>
+            <span class="cert-tag">Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="cert-card" data-cats="fullstack">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">MERN</div>
+          <img src="assets/images/FullStack-Development-Certified.jpg" alt="FullStack Development"/>
+          <div class="cert-overlay">
+            <a href="https://github.com/albenusmurmu/Certifications/blob/main/FullStack%20Development%20Certified.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Full Stack Development</div>
+          <h3 class="cert-title">FullStack Development Certified</h3>
+          <p class="cert-desc">Scalable MERN apps with auth, CRUD operations &amp; responsive UI.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">React</span>
+            <span class="cert-tag">Node.js</span>
+            <span class="cert-tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="cert-card" data-cats="java">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Java</div>
+          <img src="assets/images/Dsa-With-Java.jpg" alt="DSA With Java"/>
+          <div class="cert-overlay">
+            <a href="https://github.com/albenusmurmu/Certifications/blob/main/JAVA(DSA)%20-%20Certificate.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">DSA Certification</div>
+          <h3 class="cert-title">DSA With Java</h3>
+          <p class="cert-desc">Trees, graphs &amp; dynamic programming — 3-month intensive course.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Java</span>
+            <span class="cert-tag">DSA</span>
+            <span class="cert-tag">Algorithms</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="cert-card" data-cats="java">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Java</div>
+          <img src="assets/images/Java-Certified.jpg" alt="Java Certified"/>
+          <div class="cert-overlay">
+            <a href="assets/images/Java-Certified.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Java Certification</div>
+          <h3 class="cert-title">Java Certified</h3>
+          <p class="cert-desc">OOP, exception handling, collections &amp; multithreading expertise.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">OOP</span>
+            <span class="cert-tag">Java</span>
+            <span class="cert-tag">Threading</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <!-- <div class="cert-card" data-cats="java">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Java</div>
+          <img src="assets/images/Java-Program-Certified.jpg" alt="Java Program"/>
+          <div class="cert-overlay">
+            <a href="assets/images/Java-Program-Certified.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Java Programming</div>
+          <h3 class="cert-title">Java Program Certified</h3>
+          <p class="cert-desc">Core Java: OOP design, data structures &amp; control flow mastery.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Java</span>
+            <span class="cert-tag">Core</span>
+            <span class="cert-tag">OOP</span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- 8 -->
+      <div class="cert-card" data-cats="java">
+        <div class="card-topbar"></div>
+        <div class="cert-img-wrap">
+          <div class="cert-badge">Java</div>
+          <img src="assets/images/Java-project-certified.jpg" alt="Java Project"/>
+          <div class="cert-overlay">
+            <a href="assets/images/Java-project-certified.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              View Cert
+            </a>
+          </div>
+        </div>
+        <div class="cert-info">
+          <div class="cert-issuer">Java Project</div>
+          <h3 class="cert-title">Java Project Certified</h3>
+          <p class="cert-desc">Real-world Java applications applying OOP in practical projects.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Java</span>
+            <span class="cert-tag">Projects</span>
+            <span class="cert-tag">OOP</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /cert-grid -->
+  </div>
+</section>
+
+<!-- // =============================== 👻 End Certifications Bars 👻  =============================== \\ -->
+
+<!-- // =============================== 😺  Emoji Bars 😺  =============================== \\ -->
+
+<section id="emojiRoom">
+  <div class="scene-outer mt-5">
+  <div class="scene-wrapper">
+    <div class="room">
+      <div class="room-wall"></div>
+      <div class="wall-grid"></div>
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+  
+      <!-- ── WALL SHELF ── -->
+      <div class="shelf"></div>
+      <div class="books">
+        <div class="book" style="width:14px;height:38px;background:linear-gradient(180deg,#ff7eb3,#d45a8a);"></div>
+        <div class="book" style="width:12px;height:44px;background:linear-gradient(180deg,#4ab3ff,#2878c8);"></div>
+        <div class="book" style="width:10px;height:32px;background:linear-gradient(180deg,#ffd166,#c8a020);"></div>
+        <div class="book" style="width:14px;height:48px;background:linear-gradient(180deg,#00e5cc,#00a890);"></div>
+        <div class="book" style="width:10px;height:36px;background:linear-gradient(180deg,#a78bfa,#7c5fd4);"></div>
+        <div class="book" style="width:12px;height:40px;background:linear-gradient(180deg,#fb923c,#c0602a);"></div>
+      </div>
+  
+      <!-- Small plant -->
+      <div class="plant">
+        <svg width="36" height="50" viewBox="0 0 36 50" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="36" width="16" height="14" rx="3" fill="#2a3a6a" stroke="#3a4d80" stroke-width="1.5"/>
+          <ellipse cx="9" cy="30" rx="10" ry="12" fill="#22a060" opacity="0.9"/>
+          <ellipse cx="22" cy="26" rx="9" ry="11" fill="#28c070" opacity="0.9"/>
+          <ellipse cx="15" cy="22" rx="8" ry="10" fill="#30d080"/>
+          <line x1="18" y1="36" x2="18" y2="28" stroke="#1a8040" stroke-width="2"/>
+        </svg>
+      </div>
+  
+      <!-- ── PIN BOARD ── -->
+      <div class="pinboard">
+        <div class="sticky" style="top:22px;left:8px;width:36px;height:30px;background:#ffd166;color:#8a6010;transform:rotate(-3deg);">
+          <span style="font-size:5.5px;text-align:center;line-height:1.4;">COLOR<br/>THEORY</span>
+        </div>
+        <div class="sticky" style="top:20px;left:50px;width:32px;height:28px;background:#ff7eb3;color:#8a2050;transform:rotate(4deg);">
+          <span style="font-size:5px;text-align:center;line-height:1.4;">KERNING<br/>IS ART</span>
+        </div>
+        <div class="sticky" style="top:58px;left:14px;width:34px;height:30px;background:#00e5cc;color:#006655;transform:rotate(-2deg);">
+          <span style="font-size:5px;text-align:center;line-height:1.4;">⬡ GRID<br/>SYSTEM</span>
+        </div>
+        <div class="sticky" style="top:55px;left:54px;width:32px;height:28px;background:#a78bfa;color:#4a2088;transform:rotate(3deg);">
+          <span style="font-size:5px;text-align:center;line-height:1.4;">SHIP<br/>IT 🚀</span>
+        </div>
+        <!-- small color circle swatches -->
+        <svg style="position:absolute;bottom:6px;left:8px;" width="110" height="16" viewBox="0 0 110 16">
+          <circle cx="8" cy="8" r="6" fill="#ff5f5f"/>
+          <circle cx="22" cy="8" r="6" fill="#ffd166"/>
+          <circle cx="36" cy="8" r="6" fill="#22cc88"/>
+          <circle cx="50" cy="8" r="6" fill="#4ab3ff"/>
+          <circle cx="64" cy="8" r="6" fill="#a78bfa"/>
+          <circle cx="78" cy="8" r="6" fill="#ff7eb3"/>
+          <circle cx="92" cy="8" r="6" fill="#00e5cc"/>
+        </svg>
+      </div>
+  
+      <!-- ── MONITOR ── -->
+      <div class="monitor-group">
+        <div class="screen-glow-outer"></div>
+        <div class="monitor">
+          <div class="screen-content">
+            <div class="screen-topbar">
+              <div class="dot dot-r"></div>
+              <div class="dot dot-y"></div>
+              <div class="dot dot-g"></div>
+              <div style="margin-left:8px;font-size:7px;color:rgba(74,179,255,0.5);font-weight:700;letter-spacing:1px;">portfolio.jsx</div>
+            </div>
+            <!-- Code lines left column -->
+            <div style="position:absolute;left:6px;top:22px;width:100px;">
+              <div class="code-line" style="width:80%;background:rgba(74,179,255,0.5);animation-delay:0s;"></div>
+              <div class="code-line" style="width:60%;background:rgba(0,229,204,0.4);animation-delay:0.3s;margin-left:8px;"></div>
+              <div class="code-line" style="width:70%;background:rgba(255,113,179,0.4);animation-delay:0.6s;margin-left:8px;"></div>
+              <div class="code-line" style="width:50%;background:rgba(74,179,255,0.35);animation-delay:0.2s;margin-left:14px;"></div>
+              <div class="code-line" style="width:65%;background:rgba(0,229,204,0.4);animation-delay:0.5s;margin-left:14px;"></div>
+              <div class="code-line" style="width:40%;background:rgba(167,139,250,0.5);animation-delay:0.1s;margin-left:8px;"></div>
+              <div class="code-line" style="width:75%;background:rgba(74,179,255,0.4);animation-delay:0.4s;"></div>
+              <div class="code-line" style="width:45%;background:rgba(255,209,102,0.4);animation-delay:0.7s;margin-left:8px;"></div>
+              <div style="height:10px;display:flex;align-items:center;">
+                <div style="height:5px;width:30%;background:rgba(0,229,204,0.4);border-radius:3px;margin-left:14px;"></div>
+                <div class="cursor-blink"></div>
+              </div>
+            </div>
+            <!-- UI mockup right -->
+            <div class="ui-mockup">
+              <div class="ui-header"></div>
+              <div class="ui-row" style="width:80%"></div>
+              <div class="ui-row" style="width:60%"></div>
+              <div class="ui-card"></div>
+              <div class="ui-row" style="width:70%"></div>
+              <div class="ui-row" style="width:50%"></div>
+            </div>
+            <!-- screen scan line -->
+            <div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.08) 4px);pointer-events:none;border-radius:10px;"></div>
+          </div>
+        </div>
+        <div class="monitor-stand-neck"></div>
+        <div class="monitor-stand-base"></div>
+      </div>
+  
+      <!-- ── DESK SURFACE ── -->
+      <div class="desk">
+        <div class="desk-top-edge"></div>
+      </div>
+  
+      <!-- ── MUG ── -->
+      <div class="mug-group">
+        <div class="steam">
+          <div class="steam-wisp" style="height:0;"></div>
+          <div class="steam-wisp" style="height:0;"></div>
+          <div class="steam-wisp" style="height:0;"></div>
+        </div>
+        <div class="mug">
+          <div class="mug-handle"></div>
+          <div class="mug-logo">🐹</div>
+        </div>
+      </div>
+  
+      <!-- ── PENCIL HOLDER ── -->
+      <div class="pencil-holder">
+        <svg width="28" height="55" viewBox="0 0 28 55" xmlns="http://www.w3.org/2000/svg">
+          <!-- pencils sticking out -->
+          <rect x="5" y="0" width="5" height="28" rx="2" fill="#ffd166" transform="rotate(-8,5,28)"/>
+          <rect x="5" y="0" width="5" height="26" rx="2" fill="#ff7eb3" transform="rotate(5,14,28)"/>
+          <rect x="5" y="0" width="5" height="30" rx="2" fill="#4ab3ff" transform="rotate(15,18,28)"/>
+          <!-- cup -->
+          <rect x="0" y="23" width="28" height="32" rx="4" fill="linear-gradient(135deg,#ff7eb3,#d45a8a)"/>
+          <rect x="0" y="23" width="28" height="32" rx="4" fill="#ff7eb3" stroke="#d45a8a" stroke-width="1.5"/>
+          <rect x="2" y="25" width="24" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
+        </svg>
+      </div>
+  
+      <!-- ── COLOR PALETTE STRIPS ── -->
+      <div class="palette-strips">
+        <svg width="72" height="90" viewBox="0 0 72 90" xmlns="http://www.w3.org/2000/svg">
+          <!-- Swatch card 1 (back) -->
+          <g transform="rotate(-18,36,80)">
+            <rect x="8" y="0" width="32" height="78" rx="5" fill="#f0f0f0" stroke="#ddd" stroke-width="1"/>
+            <rect x="11" y="4" width="26" height="32" rx="3" fill="#ff5f5f"/>
+            <rect x="11" y="39" width="26" height="8" rx="2" fill="#eee"/>
+            <rect x="11" y="50" width="20" height="4" rx="2" fill="#ddd"/>
+            <rect x="11" y="57" width="16" height="4" rx="2" fill="#ddd"/>
+          </g>
+          <!-- Swatch card 2 -->
+          <g transform="rotate(-6,36,80)">
+            <rect x="8" y="0" width="32" height="80" rx="5" fill="#f8f8ff" stroke="#ddd" stroke-width="1"/>
+            <rect x="11" y="4" width="26" height="34" rx="3" fill="#4ab3ff"/>
+            <rect x="11" y="41" width="26" height="8" rx="2" fill="#eee"/>
+            <rect x="11" y="52" width="20" height="4" rx="2" fill="#ddd"/>
+            <rect x="11" y="59" width="16" height="4" rx="2" fill="#ddd"/>
+          </g>
+          <!-- Swatch card 3 (front) -->
+          <g transform="rotate(8,36,80)">
+            <rect x="8" y="0" width="32" height="82" rx="5" fill="#fffef5" stroke="#ddd" stroke-width="1"/>
+            <rect x="11" y="4" width="26" height="34" rx="3" fill="#00e5cc"/>
+            <rect x="11" y="41" width="26" height="8" rx="2" fill="#eee"/>
+            <rect x="11" y="52" width="20" height="4" rx="2" fill="#ddd"/>
+            <rect x="11" y="59" width="16" height="4" rx="2" fill="#ddd"/>
+          </g>
+        </svg>
+      </div>
+  
+      <!-- ── DESIGN SKETCH PAPER ── -->
+      <div class="sketch-paper">
+        <svg width="110" height="130" viewBox="0 0 110 130" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#e8f0ff"/>
+            </linearGradient>
+          </defs>
+          <!-- shadow -->
+          <rect x="5" y="5" width="100" height="122" rx="6" fill="rgba(0,0,0,0.25)"/>
+          <!-- paper -->
+          <rect x="0" y="0" width="100" height="122" rx="6" fill="url(#pgrad)" stroke="#c8d8f0" stroke-width="1.5"/>
+          <!-- fold corner -->
+          <path d="M 76 0 L 100 28 L 76 28 Z" fill="#c0d0ef"/>
+          <path d="M 76 0 L 100 28" stroke="#b0c0e0" stroke-width="1" fill="none"/>
+          <!-- wireframe UI sketch -->
+          <rect x="8" y="8" width="65" height="8" rx="2" fill="#4ab3ff" opacity="0.6"/>
+          <rect x="8" y="20" width="40" height="4" rx="2" fill="#ddd"/>
+          <rect x="8" y="28" width="55" height="18" rx="3" fill="rgba(74,179,255,0.12)" stroke="rgba(74,179,255,0.4)" stroke-width="1"/>
+          <!-- nav dots sketch -->
+          <circle cx="14" cy="37" r="3" fill="rgba(74,179,255,0.5)"/>
+          <circle cx="24" cy="37" r="3" fill="rgba(0,229,204,0.5)"/>
+          <circle cx="34" cy="37" r="3" fill="rgba(255,113,179,0.5)"/>
+          <!-- Cards sketch -->
+          <rect x="8" y="52" width="26" height="22" rx="3" fill="rgba(0,229,204,0.1)" stroke="rgba(0,229,204,0.4)" stroke-width="1"/>
+          <rect x="38" y="52" width="26" height="22" rx="3" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.4)" stroke-width="1"/>
+          <!-- text lines -->
+          <rect x="8" y="80" width="60" height="4" rx="2" fill="#ddd"/>
+          <rect x="8" y="88" width="50" height="3" rx="1.5" fill="#e8e8e8"/>
+          <rect x="8" y="95" width="44" height="3" rx="1.5" fill="#e8e8e8"/>
+          <rect x="8" y="102" width="55" height="3" rx="1.5" fill="#e8e8e8"/>
+          <rect x="8" y="109" width="38" height="3" rx="1.5" fill="#e8e8e8"/>
+          <!-- small annotation mark -->
+          <circle cx="88" cy="62" r="6" fill="none" stroke="#ff7eb3" stroke-width="1.5"/>
+          <text x="85" y="66" font-size="7" fill="#ff7eb3" font-family="Nunito,sans-serif" font-weight="800">✓</text>
+        </svg>
+      </div>
+  
+      <!-- ── HAMSTER CHARACTER (SVG with SMIL animations) ── -->
+      <div class="hamster-group">
+        <svg class="hamster-svg" width="320" height="310" viewBox="0 0 320 310" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="hBodyGrad" cx="45%" cy="38%" r="58%">
+              <stop offset="0%" stop-color="#f0d070"/>
+              <stop offset="55%" stop-color="#d4a832"/>
+              <stop offset="100%" stop-color="#b88820"/>
+            </radialGradient>
+            <radialGradient id="hBellyGrad" cx="50%" cy="40%" r="55%">
+              <stop offset="0%" stop-color="#faebc0"/>
+              <stop offset="65%" stop-color="#e8d090"/>
+              <stop offset="100%" stop-color="#c8a850"/>
+            </radialGradient>
+            <radialGradient id="hEarGrad" cx="50%" cy="55%" r="55%">
+              <stop offset="0%" stop-color="#e8c050"/>
+              <stop offset="100%" stop-color="#c09030"/>
+            </radialGradient>
+            <radialGradient id="hEarInner" cx="50%" cy="55%" r="55%">
+              <stop offset="0%" stop-color="#ffc0c0"/>
+              <stop offset="100%" stop-color="#e07070"/>
+            </radialGradient>
+            <linearGradient id="hShirt" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#90d0f8"/>
+              <stop offset="100%" stop-color="#3878c0"/>
+            </linearGradient>
+            <radialGradient id="hHighlight" cx="35%" cy="25%" r="45%">
+              <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+              <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+            </radialGradient>
+            <filter id="hShadow">
+              <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="rgba(0,0,0,0.5)"/>
+            </filter>
+          </defs>
+  
+          <!-- full character group with gentle head tilt -->
+          <g filter="url(#hShadow)">
+            <!-- head tilt group -->
+            <g>
+              <animateTransform attributeName="transform" type="rotate"
+                values="0,160,200; -4,160,200; 0,160,200; 3.5,160,200; 0,160,200"
+                dur="4s" repeatCount="indefinite" calcMode="spline"
+                keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+  
+              <!-- EARS -->
+              <!-- Left ear -->
+              <g transform="translate(82,72)">
+                <animateTransform attributeName="transform" type="rotate"
+                  values="0,82,72; -10,82,72; 5,82,72; -5,82,72; 0,82,72"
+                  dur="5s" begin="1s" repeatCount="indefinite" calcMode="spline"
+                  keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+                <ellipse cx="82" cy="72" rx="32" ry="36" fill="url(#hEarGrad)" stroke="#a07020" stroke-width="2"/>
+                <ellipse cx="82" cy="76" rx="18" ry="22" fill="url(#hEarInner)" opacity="0.9"/>
+              </g>
+              <!-- Right ear -->
+              <g transform="translate(238,72)">
+                <animateTransform attributeName="transform" type="rotate"
+                  values="0,238,72; 10,238,72; -5,238,72; 6,238,72; 0,238,72"
+                  dur="5s" begin="1.4s" repeatCount="indefinite" calcMode="spline"
+                  keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+                <ellipse cx="238" cy="72" rx="32" ry="36" fill="url(#hEarGrad)" stroke="#a07020" stroke-width="2"/>
+                <ellipse cx="238" cy="76" rx="18" ry="22" fill="url(#hEarInner)" opacity="0.9"/>
+              </g>
+  
+              <!-- BODY -->
+              <ellipse cx="160" cy="215" rx="125" ry="115" fill="url(#hBodyGrad)" stroke="#a07020" stroke-width="2.5"/>
+              <!-- body highlight stripe -->
+              <ellipse cx="140" cy="185" rx="80" ry="50" fill="rgba(255,230,100,0.12)"/>
+  
+              <!-- SHIRT bottom -->
+              <path d="M 70 268 Q 60 290 72 310 Q 120 325 160 328 Q 200 325 248 310 Q 260 290 250 268 Q 210 252 160 255 Q 110 252 70 268 Z" fill="url(#hShirt)" stroke="#2060a0" stroke-width="1.5"/>
+              <path d="M 120 268 L 160 285 L 200 268" fill="none" stroke="#1a4f90" stroke-width="2"/>
+  
+              <!-- BELLY -->
+              <ellipse cx="160" cy="232" rx="82" ry="88" fill="url(#hBellyGrad)" stroke="#c8a040" stroke-width="1.2" opacity="0.95"/>
+  
+              <!-- HEAD -->
+              <ellipse cx="160" cy="158" rx="105" ry="98" fill="url(#hBodyGrad)" stroke="#a07020" stroke-width="2.5"/>
+              <ellipse cx="140" cy="128" rx="62" ry="44" fill="rgba(255,240,150,0.15)"/>
+  
+              <!-- CHEEK POUCHES -->
+              <ellipse cx="82" cy="178" rx="42" ry="36" fill="#e8c060" stroke="#c09030" stroke-width="1.5" opacity="0.85"/>
+              <ellipse cx="238" cy="178" rx="42" ry="36" fill="#e8c060" stroke="#c09030" stroke-width="1.5" opacity="0.85"/>
+              <!-- blush -->
+              <ellipse cx="82" cy="184" rx="25" ry="20" fill="rgba(255,160,120,0.4)"/>
+              <ellipse cx="238" cy="184" rx="25" ry="20" fill="rgba(255,160,120,0.4)"/>
+  
+              <!-- FACE area -->
+              <ellipse cx="160" cy="168" rx="70" ry="64" fill="url(#hBellyGrad)" opacity="0.9"/>
+  
+              <!-- GLASSES -->
+              <rect x="100" y="140" width="56" height="40" rx="10" fill="rgba(0,0,0,0.88)" stroke="#111" stroke-width="3"/>
+              <rect x="166" y="140" width="56" height="40" rx="10" fill="rgba(0,0,0,0.88)" stroke="#111" stroke-width="3"/>
+              <path d="M 156 160 L 166 160" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+              <path d="M 100 158 Q 78 158 68 164" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <path d="M 222 158 Q 244 158 252 164" stroke="#111" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <!-- lens shine -->
+              <ellipse cx="116" cy="150" rx="9" ry="6" fill="rgba(255,255,255,0.15)" transform="rotate(-15,116,150)"/>
+              <ellipse cx="180" cy="150" rx="9" ry="6" fill="rgba(255,255,255,0.15)" transform="rotate(-15,180,150)"/>
+  
+              <!-- EYES with blink SMIL -->
+              <!-- Left eye -->
+              <g>
+                <animateTransform attributeName="transform" type="scale"
+                  values="1 1; 1 1; 1 0.05; 1 1; 1 1"
+                  dur="5s" repeatCount="indefinite" additive="sum"
+                  calcMode="spline" keyTimes="0;0.82;0.86;0.90;1"
+                  keySplines="0.4 0 0.6 1; 0 0 1 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                <circle cx="128" cy="161" r="16" fill="#1a1a1a"/>
+                <circle cx="128" cy="161" r="12" fill="#080808"/>
+                <circle cx="134" cy="155" r="5" fill="white" opacity="0.9"/>
+                <circle cx="137" cy="158" r="2" fill="white" opacity="0.5"/>
+              </g>
+              <!-- Right eye -->
+              <g>
+                <animateTransform attributeName="transform" type="scale"
+                  values="1 1; 1 1; 1 0.05; 1 1; 1 1"
+                  dur="5s" begin="0.06s" repeatCount="indefinite" additive="sum"
+                  calcMode="spline" keyTimes="0;0.82;0.86;0.90;1"
+                  keySplines="0.4 0 0.6 1; 0 0 1 1; 0 0 1 1; 0.4 0 0.6 1"/>
+                <circle cx="194" cy="161" r="16" fill="#1a1a1a"/>
+                <circle cx="194" cy="161" r="12" fill="#080808"/>
+                <circle cx="200" cy="155" r="5" fill="white" opacity="0.9"/>
+                <circle cx="203" cy="158" r="2" fill="white" opacity="0.5"/>
+              </g>
+  
+              <!-- NOSE -->
+              <ellipse cx="161" cy="196" rx="12" ry="8" fill="#e07080" stroke="#c05060" stroke-width="1.2"/>
+              <ellipse cx="159" cy="194" rx="5" ry="4" fill="rgba(255,255,255,0.3)"/>
+  
+              <!-- MOUTH smile -->
+              <path d="M 148 208 Q 161 220 174 208" stroke="#b04050" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+              <!-- WHISKERS -->
+              <line x1="96" y1="193" x2="144" y2="200" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+              <line x1="92" y1="204" x2="144" y2="203" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+              <line x1="96" y1="215" x2="144" y2="207" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+              <line x1="224" y1="193" x2="176" y2="200" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+              <line x1="228" y1="204" x2="176" y2="203" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+              <line x1="224" y1="215" x2="176" y2="207" stroke="rgba(180,140,60,0.6)" stroke-width="1.2"/>
+  
+              <!-- body highlight overlay -->
+              <ellipse cx="134" cy="135" rx="60" ry="45" fill="url(#hHighlight)" opacity="0.7"/>
+            </g>
+  
+            <!-- LEFT ARM (holding sketch paper - paw movement) -->
+            <g>
+              <animateTransform attributeName="transform" type="rotate"
+                values="0,90,245; -5,90,245; 2,90,245; -3,90,245; 0,90,245"
+                dur="3.5s" repeatCount="indefinite" calcMode="spline"
+                keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+              <path d="M 90 245 Q 72 270 68 295" stroke="#c09030" stroke-width="18" fill="none" stroke-linecap="round"/>
+              <path d="M 90 245 Q 72 270 68 295" stroke="#d4a832" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <ellipse cx="67" cy="302" rx="22" ry="17" fill="#d4a832" stroke="#a07020" stroke-width="2"/>
+              <!-- paw toes -->
+              <ellipse cx="54" cy="308" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+              <ellipse cx="67" cy="312" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+              <ellipse cx="80" cy="308" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+            </g>
+  
+            <!-- RIGHT ARM (holding swatches) -->
+            <g>
+              <animateTransform attributeName="transform" type="rotate"
+                values="0,230,245; 4,230,245; -3,230,245; 5,230,245; 0,230,245"
+                dur="3s" repeatCount="indefinite" calcMode="spline"
+                keySplines="0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1; 0.4 0 0.6 1"/>
+              <path d="M 230 245 Q 248 270 252 295" stroke="#c09030" stroke-width="18" fill="none" stroke-linecap="round"/>
+              <path d="M 230 245 Q 248 270 252 295" stroke="#d4a832" stroke-width="14" fill="none" stroke-linecap="round"/>
+              <ellipse cx="253" cy="302" rx="22" ry="17" fill="#d4a832" stroke="#a07020" stroke-width="2"/>
+              <ellipse cx="240" cy="308" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+              <ellipse cx="253" cy="312" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+              <ellipse cx="266" cy="308" rx="8" ry="6" fill="#c09030" stroke="#a07020" stroke-width="1.2"/>
+            </g>
+  
+            <!-- FEET -->
+            <ellipse cx="128" cy="300" rx="34" ry="17" fill="#c09030" stroke="#a07020" stroke-width="1.8"/>
+            <ellipse cx="192" cy="300" rx="34" ry="17" fill="#c09030" stroke="#a07020" stroke-width="1.8"/>
+          </g>
+        </svg>
+  
+        <!-- THOUGHT BUBBLE -->
+        <div class="thought-bubble">
+          <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="68" r="5" fill="rgba(74,179,255,0.5)"/>
+            <circle cx="22" cy="62" r="7" fill="rgba(74,179,255,0.5)"/>
+            <rect x="30" y="8" width="82" height="52" rx="14" fill="rgba(15,28,60,0.92)" stroke="rgba(74,179,255,0.5)" stroke-width="1.5"/>
+            <!-- color swatches in bubble -->
+            <circle cx="52" cy="34" r="10" fill="#ff5f5f"/>
+            <circle cx="71" cy="34" r="10" fill="#4ab3ff"/>
+            <circle cx="90" cy="34" r="10" fill="#00e5cc"/>
+            <text x="52" y="58" text-anchor="middle" font-size="9" fill="rgba(74,179,255,0.8)" font-family="Nunito,sans-serif" font-weight="800">perfect palette?</text>
+          </svg>
+        </div>
+      </div>
+  
+      <!-- ── FLOATING DESIGN PIXELS ── -->
+      <div class="px" style="width:8px;height:8px;background:#4ab3ff;left:300px;top:350px;animation-duration:5s;animation-delay:0s;border-radius:2px;"></div>
+      <div class="px" style="width:6px;height:6px;background:#00e5cc;left:180px;top:320px;animation-duration:6.5s;animation-delay:1.2s;border-radius:50%;"></div>
+      <div class="px" style="width:10px;height:10px;background:#ff7eb3;left:620px;top:380px;animation-duration:7s;animation-delay:0.5s;border-radius:2px;"></div>
+      <div class="px" style="width:5px;height:5px;background:#ffd166;left:480px;top:340px;animation-duration:5.5s;animation-delay:2s;border-radius:50%;"></div>
+      <div class="px" style="width:7px;height:7px;background:#a78bfa;left:140px;top:400px;animation-duration:8s;animation-delay:0.8s;border-radius:2px;"></div>
+      <div class="px" style="width:6px;height:6px;background:#ff5f5f;left:760px;top:370px;animation-duration:6s;animation-delay:1.8s;border-radius:50%;"></div>
+      <div class="px" style="width:4px;height:4px;background:#4ab3ff;left:560px;top:410px;animation-duration:9s;animation-delay:3s;border-radius:50%;"></div>
+      <div class="px" style="width:8px;height:8px;background:#00e5cc;left:400px;top:295px;animation-duration:4.5s;animation-delay:1s;border-radius:2px;opacity:0.6;"></div>
+  
+      <!-- label -->
+      <div class="studio-label">✦ &nbsp; creative studio &nbsp; ✦</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- // =============================== 👻 End Emoji Bars 👻  =============================== \\ -->
+
+
+<!-- // =============================== 😺  Contact Bars 😺  =============================== \\ -->
+
+<!-- ══════════════════════════════
+     CONTACT SECTION
+══════════════════════════════ -->
+
+<section id="contact">
+  <div class="contact-wrap">
+
+    <!-- Header -->
+    <div class="section-header">
+      <div class="section-eyebrow"><span class="num">06.</span> Say Hello</div>
+      <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+      <p class="section-subtitle">// contact.init — open to opportunities &amp; collaborations</p>
+    </div>
+
+    <!-- Grid -->
+    <div class="contact-grid">
+
+      <!-- LEFT -->
+      <div class="contact-left">
+
+        <!-- Status -->
+        <div class="status-card">
+          <div class="status-top">
+            <span class="status-label">Current Status</span>
+            <div class="status-badge"><div class="status-dot"></div> Available</div>
+          </div>
+          <h3 class="status-headline">Let's build something <span class="hl">remarkable</span> together.</h3>
+          <p class="status-body">
+            Whether you have a project in mind, a role to fill, or just want to talk tech — my inbox is always open. I'll get back to you within 24 hours.
+          </p>
+        </div>
+
+        <!-- Contact items -->
+        <div class="contact-items">
+          <a href="mailto:albenusm@gmail.com" class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="ci-text">
+              <span class="ci-label">Email</span>
+              <span class="ci-value">albenusm@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="tel:+917857971928" class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 11a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l1.97-1.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="ci-text">
+              <span class="ci-label">Phone</span>
+              <span class="ci-value">+91 785 797 1928</span>
+            </div>
+          </a>
+
+          <a href="https://maps.google.com/?q=Jaipur+Rajasthan+India" target="_blank" rel="noopener" class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="ci-text">
+              <span class="ci-label">Location</span>
+              <span class="ci-value">Jaipur, Rajasthan, India</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Socials -->
+        <div class="social-row">
+          <a href="https://www.linkedin.com/in/albenusmurmu/" target="_blank" rel="noopener" class="social-btn sb-linkedin">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/albenusmurmu" target="_blank" rel="noopener" class="social-btn sb-github">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/albenus.peter/" target="_blank" rel="noopener" class="social-btn sb-instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="https://x.com/AlbenusMur63460" target="_blank" rel="noopener" class="social-btn sb-twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter
+          </a>
+        </div>
+
+      </div><!-- /contact-left -->
+
+      <!-- RIGHT -->
+      <div class="contact-right">
+
+        <!-- Map -->
+        <div class="map-card">
+          <div class="map-header">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <span class="map-title">location.map</span>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.432654495577!2d75.8313877150423!3d26.78852428317769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc906aaaaaaab%3A0x8657d2623832e7cc!2sGlobal%20institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1678886454321!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Jaipur location">
+          </iframe>
+          <div class="map-pin-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="map-pin-text">Jaipur, Rajasthan, India — IN</span>
+          </div>
+        </div>
+
+        <!-- Form -->
+      <div class="form-card">
+        
+        <div class="form-header">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <span class="form-title">send_message.js</span>
+        </div>
+  
+      <div class="form-body">
+  
+      <div class="form-row">
+  
+        <div class="field">
+          <label class="field-label">Name <span class="req">*</span></label>
+          <input 
+            id="name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+          />
+        </div>
+  
+        <div class="field">
+          <label class="field-label">Email <span class="req">*</span></label>
+          <input
+            id="email"
+            type="email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+  
+      </div>
+  
+      <div class="field">
+        <label class="field-label">Subject</label>
+        <input
+          id="subject"
+          type="text"
+          placeholder="What's this about?"
+        />
+      </div>
+  
+      <div class="field">
+        <label class="field-label">Message <span class="req">*</span></label>
+        <textarea
+          id="message"
+          placeholder="Tell me about your project or idea..."
+          required
+        ></textarea>
+      </div>
+  
+      <button class="btn-send" type="button" onclick="handleSend(this)">
+        Send Message
+      </button>
+  
+    </div>
+</div>
+
+      </div><!-- /contact-right -->
+    </div><!-- /contact-grid -->
+  </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <span class="footer-logo">Sony<span>Com</span></span>
+        <p class="footer-bio">Full-Stack Developer · Cloud Enthusiast · DevOps · Linux — building scalable systems and elegant interfaces from Jaipur, India.</p>
+        <div class="footer-tag"><div class="dot"></div> Open to work &amp; freelance</div>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/albenusmurmu/" target="_blank" rel="noopener" class="fsocial li">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/albenusmurmu" target="_blank" rel="noopener" class="fsocial gh">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.instagram.com/albenus.pieter/" target="_blank" rel="noopener" class="fsocial ig">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </a>
+          <a href="https://x.com/AlbenusMur63460" target="_blank" rel="noopener" class="fsocial tw">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /footer-grid -->
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2025 <a href="https://sonycom-frontend.onrender.com" target="_blank" rel="noopener">SonyCom</a>. All Rights Reserved.
+      </p>
+      <p class="footer-made">
+        Crafted with <span class="heart">♥</span> by <span>Albenus Peter</span>
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- // =============================== 👻 End Contact Bars 👻  =============================== \\ -->
+
+
+<!-- // ================================  😺 AI chat widget 😺  ========================================= \\ -->
+
+<div class="demo-bg"></div>
+<div class="demo-label">✦ AI Chat Widget Demo ✦</div>
+
+<!-- ═══ NOTIFICATION TOAST ═══ -->
+<div class="notif-toast" id="notifToast" onclick="openChat()">
+  <div class="notif-avatar">🤖</div>
+  <div class="notif-text">
+    <div class="notif-name">AI Assistant</div>
+    <div class="notif-msg">Hi! 👋 How can I help you today?</div>
+  </div>
+  <span class="notif-close" onclick="dismissNotif(event)">✕</span>
+</div>
+
+<!-- ═══ CHAT LAUNCHER ═══ -->
+<div class="chat-launcher">
+  <button class="launcher-btn" id="launcherBtn" onclick="toggleChat()" aria-label="Open chat">
+    <div class="unread-badge" id="unreadBadge">1</div>
+    <!-- Chat icon -->
+    <svg class="icon-chat" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+    </svg>
+    <!-- Close icon -->
+    <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+      <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+    </svg>
+  </button>
+</div>
+
+<!-- ═══ CHAT WINDOW ═══ -->
+<div class="chat-window" id="chatWindow">
+
+  <!-- Header -->
+  <div class="chat-header">
+    <div class="header-avatar">
+      <div class="avatar-ring">
+        <div class="avatar-inner">🤖</div>
+      </div>
+      <div class="online-dot"></div>
+    </div>
+    <div class="header-info">
+      <div class="header-name">AI Assistant</div>
+      <div class="header-status">
+        <div class="status-dot-anim"></div>
+        Online · Replies instantly
+      </div>
+    </div>
+    <div class="header-actions">
+      <!-- Voice Call -->
+      <button class="hdr-btn" id="callBtn" onclick="toggleCall()" title="Voice Call">
+        📞
+      </button>
+      <!-- Video Call -->
+      <button class="hdr-btn" onclick="startVideo()" title="Video Call">
+        🎥
+      </button>
+      <!-- Minimize -->
+      <button class="hdr-btn danger" onclick="closeChat()" title="Close">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Call Banner -->
+  <div class="call-banner" id="callBanner">
+    <div class="call-wave">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="call-timer" id="callTimer">00:00</div>
+    <span style="font-size:12px;color:rgba(255,255,255,0.5);margin-left:6px;">Voice call active</span>
+    <button class="call-end-btn" onclick="endCall()">End Call</button>
+  </div>
+
+  <!-- Messages -->
+  <div class="chat-messages" id="chatMessages">
+    <div class="date-divider">Today</div>
+
+    <div class="msg-row ai">
+      <div class="msg-avatar">🤖</div>
+      <div class="msg-content">
+        <div class="msg-bubble">
+          Hey! 👋 I'm your AI Assistant. I'm here to help you with anything you need. What can I do for you today?
+        </div>
+        <div class="msg-time">Just now</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Replies -->
+  <div class="quick-replies" id="quickReplies">
+    <!-- <button class="quick-btn" onclick="quickReply('👋 Just Saying Hi')">👋 Just Saying Hi</button> -->
+    <button class="quick-btn" onclick="quickReply('🚀 Launch My Project')">🚀 Launch My Project</button>
+    <button class="quick-btn" onclick="quickReply('💡 Get Ideas')">🦸‍♂️ Get Ideas</button>
+    <button class="quick-btn" onclick="quickReply('📋 View Portfolio')">📋 View Portfolio</button>
+    <button class="quick-btn" onclick="quickReply('📞 Schedule a Call')">📞 Schedule a Call</button>
+    <button class="quick-btn" onclick="quickReply('📚 Learning Help')">📚 Learning Help</button>
+    <button class="quick-btn" onclick="quickReply('🎨 Design Feedback')">🎨 Design Feedback</button>
+    <button class="quick-btn" onclick="quickReply('⚙️ Tech Support')">⚙️ Tech Support</button>
+    <button class="quick-btn" onclick="quickReply('📬 Contact Me')">📬 Contact Me</button>
+    <button class="quick-btn" onclick="quickReply('📄 View Resume')">📄 View Resume</button>
+    <button class="quick-btn" onclick="quickReply('🧪 View Live Projects')">🧪 View Live Projects</button>
+    <button class="quick-btn" onclick="quickReply('💡 Startup Ideas')">💡 Startup Ideas</button>        
+    <button class="quick-btn" onclick="quickReply('📚 Learning Help')">📚 Learning Help</button>
+  </div>
+
+  <!-- Input Area -->
+  <div class="chat-input-area">
+    <!-- Emoji picker -->
+    <div class="emoji-picker-mini" id="emojiPicker">
+      <button class="emoji-pick-btn" onclick="insertEmoji('😊')">😊</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('👋')">👋</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('🚀')">🚀</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('💡')">💡</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('❤️')">❤️</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('🎉')">🎉</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('✅')">✅</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('🔥')">🔥</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('💬')">💬</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('🤔')">🤔</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('👍')">👍</button>
+      <button class="emoji-pick-btn" onclick="insertEmoji('🙌')">🙌</button>
+    </div>
+
+    <div class="input-row">
+      <textarea
+        class="chat-input"
+        id="chatInput"
+        placeholder="Type a message…"
+        rows="1"
+        onkeydown="handleKey(event)"
+        oninput="autoResize(this)"
+      ></textarea>
+      <div class="input-actions">
+        <button class="input-btn" onclick="toggleEmoji()" title="Emoji">😊</button>
+        <button class="input-btn" id="micBtn" onclick="toggleMic()" title="Voice message">🎤</button>
+        <button class="send-btn" onclick="sendMessage()" title="Send">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"/>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="powered-by">Powered by <span>AI Engine</span> · End-to-end encrypted 🔒</div>
+  </div>
+</div>
+
+<!-- // ================================ 👻 End AI chat widget 👻 ====================================== \\ -->
+
+</body>
+<script src="js/script.js"></script>
+</html>
