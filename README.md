@@ -15,9 +15,9 @@ Welcome to my **personal portfolio** repository! This is a clean, responsive, an
 - 📋 Structured layout for About, Projects, Skills, Contact
 
 ---
-```
-## 📁 Project Structure
 
+## 📁 Project Structure
+```
 my-portfolio/
 │
 ├── assets/images # Project and profile images
