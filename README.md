@@ -15,7 +15,7 @@ Welcome to my **personal portfolio** repository! This is a clean, responsive, an
 - 📋 Structured layout for About, Projects, Skills, Contact
 
 ---
-
+```
 ## 📁 Project Structure
 
 my-portfolio/
@@ -24,7 +24,7 @@ my-portfolio/
 ├── css # Stylesheets
 ├── js # JavaScript for interactivity
 └── index.html # Main HTML file
-
+```
 ---
 
 ## 🧰 Technologies Used
