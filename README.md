@@ -20,7 +20,8 @@ Welcome to my **personal portfolio** repository! This is a clean, responsive, an
 ```
 my-portfolio/
 │
-├── assets/images # Project and profile images
+├── assets/  # Project and profile images
+|    └── images/
 ├── css # Stylesheets
 ├── js # JavaScript for interactivity
 └── index.html # Main HTML file
